@@ -1,0 +1,6 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^xxxx/([0-9]+) xxxx.php?id=$1 [L,QSA]
+RewriteRule ^xxxx xxxx.php [L,QSA]
